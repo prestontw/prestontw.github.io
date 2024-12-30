@@ -13,7 +13,6 @@
           buildInputs = [
             pnpm
             nodejs_22
-            tailwindcss
             just
             nodePackages.typescript-language-server
             astro-language-server
