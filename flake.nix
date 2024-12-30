@@ -15,8 +15,9 @@
             nodejs_22
             tailwindcss
             just
-            nodePackages.svelte-language-server
             nodePackages.typescript-language-server
+            astro-language-server
+            tailwindcss-language-server
             nodePackages.prettier
           ] ++ lib.optionals stdenv.isDarwin [libiconv llvmPackages.bintools];
         };
