@@ -17,7 +17,6 @@
             nodePackages.typescript-language-server
             astro-language-server
             tailwindcss-language-server
-            nodePackages.prettier
           ] ++ lib.optionals stdenv.isDarwin [libiconv llvmPackages.bintools];
         };
       });
