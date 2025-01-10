@@ -20,10 +20,10 @@ const { title, description, pubDate, updatedDate } = Astro.props;
     <main class="m-0 w-[calc(100%-2em)] max-w-full">
       <article>
         <div
-          class="text-gray-dark m-auto w-[720px] max-w-[calc(100%-2em)] p-[1em]"
+          class="m-auto w-[720px] max-w-[calc(100%-2em)] p-[1em] text-gray-dark"
         >
           <div class="title mb-4 py-4 text-center leading-4">
-            <div class="text-gray mb-2">
+            <div class="mb-2 text-gray">
               <FormattedDate date={pubDate} />
               {
                 updatedDate && (

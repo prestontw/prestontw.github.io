@@ -9,3 +9,6 @@ preview:
 
 install:
     pnpm install
+
+format:
+    pnpm exec prettier . --write

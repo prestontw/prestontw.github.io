@@ -11,4 +11,3 @@ args = ["--stdio"]
 name = "astro"
 auto-format = true
 language-servers = [ "astro-ls", "tailwindcss-ls" ]
-

@@ -22,5 +22,5 @@ The source is available at:
 
 <https://github.com/prestontw/bazel-rust-guided-experiment>
 
-P.S.: Bazel might run afoul of Matklad's [O(1) build file rule](https://matklad.github.io/2023/12/31/O(1)-build-file.html).
+P.S.: Bazel might run afoul of Matklad's [O(1) build file rule](<https://matklad.github.io/2023/12/31/O(1)-build-file.html>).
 This is necessary since Bazel has to be aware of tests and their dependencies to know whether their results are up to date, but it's just a little more manual effort or initial automated tooling setup than I'm used to.
