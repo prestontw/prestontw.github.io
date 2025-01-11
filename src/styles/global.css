@@ -54,6 +54,9 @@ main {
   margin: auto;
   padding: 3em 1em;
 }
+article a {
+  text-decoration: underline;
+}
 h1,
 h2,
 h3,
