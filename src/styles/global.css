@@ -54,9 +54,6 @@ main {
   margin: auto;
   padding: 3em 1em;
 }
-article a {
-  text-decoration: underline;
-}
 h1,
 h2,
 h3,
@@ -88,9 +85,6 @@ b {
 }
 p {
   margin-bottom: 1em;
-}
-.prose p {
-  margin-bottom: 2em;
 }
 textarea {
   width: 100%;

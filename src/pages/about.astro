@@ -1,0 +1,37 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class="w-[80ch]">
+      <section>
+        <p>
+          Hi, I'm Preston! 🙆🏼‍♂️. I like programming languages, board games,
+          ultimate frisbee, and pickleball! I'm trying out this blog to write
+          about programming and games.
+        </p><p>
+          I've been to Ireland, Hungary, Slovakia, Italy, Spain, Malaysia,
+          Portugal, and Puerto Rico. I've lived in Texas, Tennessee, Rhode
+          Island, and Massachussets in the 'States, and in Pest in Hungary.
+        </p>
+        <p>
+          Find me on <a
+            class="underline"
+            href="https://github.com/prestontw"
+            target="_blank">Github</a
+          >.
+        </p>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

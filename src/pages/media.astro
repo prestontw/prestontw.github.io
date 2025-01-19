@@ -1,0 +1,48 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { getCollection } from "astro:content";
+
+const readings = (await getCollection("readings")).sort(
+  (a, b) => a.data.priority - b.data.priority,
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class="w-[80ch]">
+      <section>
+        <p>
+          Interesting articles and books, either because I like what they have
+          to say or because I want to investigate them more!
+        </p>
+        <ul class="m-0 flex list-none flex-col gap-8 p-0">
+          {
+            readings.map((reading) => (
+              <li class="no-underline duration-200 ease-in">
+                <a class="block" href={reading.data.link} target="_blank">
+                  <h4 class="m-0 leading-none text-black hover:text-accent">
+                    {reading.data.title}
+                  </h4>
+                </a>
+                <p class="m-0 text-gray">{reading.data.author}</p>
+                <article
+                  class="prose prose-xl m-0"
+                  set:html={reading.rendered?.html}
+                />
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
