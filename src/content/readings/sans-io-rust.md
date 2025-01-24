@@ -9,3 +9,4 @@ Seems super interesting. Dependency inversion + state machines lead to easy to t
 `async/await` in Rust already compiles down to state machines, though.
 I want to play around with these two different approaches and see if one is easier to test,
 one is easier to write, etc.
+Maybe this is more applicable if one is writing a library?
