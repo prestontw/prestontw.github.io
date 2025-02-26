@@ -11,3 +11,8 @@ args = ["--stdio"]
 name = "astro"
 auto-format = true
 language-servers = [ "astro-ls", "tailwindcss-ls" ]
+
+[[language]]
+name = "markdown"
+auto-format = true
+formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "markdown"] }
