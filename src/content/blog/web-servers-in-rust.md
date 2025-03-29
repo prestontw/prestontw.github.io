@@ -33,8 +33,22 @@ Adjacently related to Rust, but maybe a nice utility technology to write web ser
 Historical record of the way the world could have been.
 Initially not super related to web servers, but this could have reduced compile time and dependencies by moving a lot of Serde's functionality into the compiler.
 
-## [All you need is data and functions](https://mckayla.blog/posts/all-you-need-is-data-and-functions.html) by Kayla
+---
+
+## A quick [Gleam](https://gleam.run/) interlude
+
+Though I really enjoy writing Rust, its heavy machinery (and all of its other heaviness) isn't always necessary for what I'm doing.
+I've used F# before, and, while I enjoyed it, there were a couple of warts that would have been nice to avoid.
+Gleam seems to be focused on being small and quick to pick up, and I've enjoyed it so far!
+
+### [All you need is data and functions](https://mckayla.blog/posts/all-you-need-is-data-and-functions.html) by Kayla
 
 I've been playing around with Gleam for Advent of Code (hopefully more on that later),
 and I'm interested in playing around with it for writing web servers too.
 I wanted to hold onto this article for why traits/interfaces aren't really required.
+
+### [Introducing use expressions!](https://gleam.run/news/v0.25-introducing-use-expressions/) by Louis Pilfold
+
+A pattern that I'm seeing in both Rust and Gleam is a happy marriage of both imperative and functional patterns.
+Rust's iterators are as efficient as imperative loops while feeling like functional patterns, and
+Gleam's introduction of `use` expressions are implemented in terms of functional patterns but read as imperative code through some nice syntactic sugar.
